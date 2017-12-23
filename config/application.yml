@@ -2,12 +2,16 @@ management:
   security:
      enabled: false
 eureka:
+  instance:
+    hostname: localhost
   client:
+    registerWithEureka: true
+    fetchRegistry: false
     serviceUrl:
-      defaultZone: http://localhost:18080/eureka/
+      defaultZone: http://${eureka.instance.hostname}:18080/eureka/
 asdf: dbc321
 logging:
-  config: http://localhost:18090/icore-config-server/development/master/log4j2.xml
+  config: http://localhost:18080/icore-config-server/development/master/log4j2.xml
 spring:
   rabbitmq:
     addresses: localhost:5672
@@ -17,3 +21,4 @@ spring:
     bus:
       trace:
         enabled: true
+application.yml
