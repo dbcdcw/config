@@ -11,8 +11,8 @@ logging:
 spring:
   rabbitmq:
     addresses: localhost:5672
-    username: icoreBus
-    password: icoreBus
+    username: dbc
+    password: dbc
   cloud:
     bus:
       trace:
