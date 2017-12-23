@@ -9,7 +9,7 @@ eureka:
       defaultZone: http://${eureka.instance.hostname}:18080/eureka/
 asdf: dbc321
 logging:
-  config: http://localhost:18090/${spring.application.name}/development/master/log4j2.xml
+  config: http://localhost:18090/${spring.application.name}/development/master/${spring.application.name}-log4j2.xml
 spring:
   rabbitmq:
     addresses: localhost:5672
