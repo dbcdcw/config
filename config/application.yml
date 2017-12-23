@@ -21,4 +21,3 @@ spring:
     bus:
       trace:
         enabled: true
-application.yml
