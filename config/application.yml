@@ -1,0 +1,19 @@
+management:
+  security:
+     enabled: false
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:18080/eureka/
+asdf: dbc321
+logging:
+  config: log.xml
+spring:
+  rabbitmq:
+    addresses: localhost:5672
+    username: icoreBus
+    password: icoreBus
+  cloud:
+    bus:
+      trace:
+        enabled: true
